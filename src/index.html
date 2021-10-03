@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bottom nav</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./main.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <article class="main">
+        <section class="content">
+            <h1>Bottom navigation experiment</h1>
+            <p class="publish-date">Published: 3 October 2021</p>
+            <h2>Introduction</h2>
+            <p>This page is an experiment / <em>proof of concept</em> in keeping the
+                navigation structure pinned to the bottom of the page. And for the
+                navigation to be responsive to mobile presentation - including when
+                additional chrome appears. It's based on this
+                <a href="https://css-tricks.com/the-trick-to-viewport-units-on-mobile/"
+                   target="_blank">article</a> published on <em>css-tricks</em>.</p>
+            <p>There are still some idiosyncracies around clicking on the menu on the
+                iPhone, at least, when there is just the iOS <em>swipe</em> area at
+                the bottom of the screen - models since and including the iPhone X,
+                without a button.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas,
+                orci nec semper egestas, augue mi interdum purus, quis fringilla tortor
+                sem eu nisi. Quisque ornare mattis urna, sed condimentum nulla varius
+                vitae. Morbi bibendum diam vitae turpis tempus convallis.</p>
+            <p>Vivamus ipsum tellus, maximus a ex vel, molestie dignissim ex. Etiam
+                dictum sem odio, vitae interdum diam aliquet sed. Mauris mollis
+                molestie augue.</p>
+            <p>Pellentesque mollis sollicitudin lacus eu placerat. Pellentesque semper
+                urna turpis, sed iaculis urna ultricies eget. Ut ac fringilla elit.
+                Phasellus libero risus, aliquam sed lorem vitae, aliquam laoreet orci.
+                Fusce feugiat condimentum ullamcorper. Nunc ut lobortis justo. Sed
+                placerat in turpis sit amet ultrices. Vivamus dapibus eget leo non
+                blandit.</p>
+            <h2>Approach</h2>
+            <p>Nunc luctus pulvinar ligula vitae mollis. Nulla eget metus tellus.</p>
+            <p>Fusce vitae enim tortor. Duis faucibus justo ac porta placerat. Mauris
+                blandit urna et dignissim egestas. In facilisis ultricies leo quis
+                hendrerit. Nullam at velit a augue sodales dignissim. Aenean mollis
+                pharetra mi, sit amet ullamcorper arcu pellentesque eu. Praesent
+                dictum euismod leo, nec dapibus massa molestie in.</p>
+            <p>Vivamus id neque vitae tortor lacinia interdum. Ut orci nisl, aliquam
+                non nulla quis, tristique condimentum dui. Maecenas nec interdum nulla,
+                ac ultricies purus. Etiam libero magna, auctor eu tempus ornare, tempor
+                non lectus. Proin nulla odio, dictum vel commodo sit amet, accumsan
+                eget elit. Nullam interdum massa orci, vel vehicula nulla euismod vel.</p>
+            <p>Donec sit amet lorem eu nunc auctor dignissim non nec nisi. Vivamus ac mi
+                at sem interdum ornare. In leo quam, porta sed sodales sit amet, tempor
+                a lectus.</p>
+            <h2>Findings</h2>
+            <p>Aliquam quis ornare massa. Pellentesque porta nisi ligula, nec convallis
+                velit accumsan nec. Proin hendrerit velit sit amet fermentum condimentum.
+                Praesent id tellus quis orci commodo sagittis id ullamcorper tortor.
+                Donec sollicitudin massa at mattis feugiat. Mauris porta eros nec massa
+                tempus, a rutrum massa molestie. Nunc venenatis ac ipsum ut ornare.
+                Proin maximus augue blandit sollicitudin imperdiet.</p>
+            <p>Nulla elementum efficitur sapien, vel eleifend massa. Phasellus accumsan
+                nibh eu mollis sodales. Donec eu orci ante. Duis rutrum sed nisl
+                dignissim placerat. Praesent id mauris ac orci condimentum aliquam.
+                Morbi at libero venenatis, semper nibh ut, ornare justo.</p>
+            <p>Duis vulputate hendrerit imperdiet. Pellentesque eu rutrum odio.</p>
+            <p>In fringilla pulvinar nunc, eget dictum nisi sollicitudin sit amet.
+                Proin neque metus, egestas quis dictum in, bibendum ut lorem. Quisque
+                id nisi tincidunt ante lobortis ultricies nec a risus. Cras nec nisl
+                pharetra, ultrices turpis eu, pulvinar mi. Nunc ornare laoreet arcu,
+                a dignissim nisi tincidunt vel. Quisque malesuada ante quis rutrum
+                mattis.</p>
+            <p>Donec ut eros id magna malesuada imperdiet ac sit amet urna. Aenean
+                gravida eu ante eu efficitur. Donec a augue elit. Curabitur maximus
+                diam sit amet scelerisque interdum. Sed vehicula dignissim placerat.
+                Nunc malesuada sapien eu justo pulvinar, et pretium ante imperdiet.
+                Donec at ligula sit amet ex posuere tincidunt.</p>
+            <h2>Conclusion</h2>
+            <p>Aenean ullamcorper vehicula dapibus. Suspendisse ut metus non turpis
+                mattis facilisis. Pellentesque lectus ligula, sagittis vel dignissim
+                eget, sollicitudin non turpis.</p>
+            <p>Donec quis eros nulla. In sit amet nibh nisi. Suspendisse et mi non
+                ex volutpat fringilla. Ut aliquet nibh id neque molestie, vel aliquam
+                lorem lacinia. Nunc ac vestibulum purus. Aenean ut finibus sem, at
+                molestie magna. Sed consequat neque sed hendrerit venenatis. Nulla
+                aliquam leo ac ex viverra, nec dapibus sapien molestie. Fusce lorem
+                ipsum, bibendum nec laoreet ut, pellentesque et neque.</p>
+        </section>
+    </article>
+    <div class="viewport-container">
+        <nav class="main">
+            <ol>
+                <li><a href="#" class="active" onclick="showAlert('Home')">Home</a></li>
+                <li><a href="#" onclick="showAlert('Dashboard')">Dashboard</a></li>
+                <li><a href="#" onclick="showAlert('Account')">Account</a></li>
+                <li><a href="#" onclick="showAlert('Logout')">Logout</a></li>
+            </ol>
+        </nav>
+    </div>
+
+</body>
+</html>

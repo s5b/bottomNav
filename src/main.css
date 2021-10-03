@@ -1,0 +1,120 @@
+:root {
+    --vh: 1vh;
+}
+
+body {
+    font-family: avenir, helvetica, arial, sans-serif;
+    font-size: 16px;
+}
+
+@media screen and (max-device-width: 400px) {
+    body {
+        font-size: 36px;
+    }
+}
+
+article {
+    margin-top: 2em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section {
+    margin-bottom: 80px;
+    border-radius: 8px;
+    border: 1px solid goldenrod;
+    padding: 1em;
+    max-width: 750px;
+    min-width: 300px;
+    color: rgba(0, 0, 0, 0.7);
+
+    box-shadow: 1px 2px 12px rgba(218, 165, 32, 0.5);
+}
+
+h1 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 120%;
+}
+
+h2, h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+p {
+    margin-top: 0.75rem;
+    line-height: 120%;
+}
+
+p.publish-date {
+    font-size: 13px;
+}
+
+p a {
+    color: goldenrod;
+    font-weight: bold;
+}
+
+div.viewport-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    contain: content;
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+nav {
+    position: absolute;
+    bottom: 0;
+    background: goldenrod;
+    height: 60px;
+    width: 100%;
+}
+
+nav ol {
+    list-style-type: none;
+    margin: 10px 0 0 0;
+    border: none;
+    padding: 0;
+    contain: content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav ol li {
+    /*border: 1px solid red;*/
+    /*contain: content;*/
+}
+
+nav ol li a {
+    display: block;
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    margin: 0;
+    --radius: 12px;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    border: 3px solid rgb(206, 158, 41);
+    padding: 10px 20px;
+    background-color: rgb(213, 184, 113);
+}
+
+nav ol li a.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+@media screen and (max-device-width: 400px) {
+    nav {
+        height: 120px;
+    }
+}
